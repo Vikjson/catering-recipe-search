@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search recipe</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="search-wrapper">
+        <input type="text" id="searchbar" placeholder="sök bland rätter" />
+        <div id="tags-filter-container">
+
+            <div id="selected-tags" class="selected-tags hidden">
+                <div class="search-tag">
+                    <div class="tag-text">
+                        <p>Glutenfritt</p>
+                        <button class="close-btn">&times;</button>
+                    </div>
+                </div>
+                <div class="search-tag">
+                    <div class="tag-text">
+                        <p>Anpassningsbar</p>
+                        <button class="close-btn">&times;</button>
+                    </div>
+                </div>
+                <div class="search-tag">
+                    <div class="tag-text">
+                        <p>Nötkött</p>
+                        <button class="close-btn">&times;</button>
+                    </div>
+                </div>
+            </div>
+            <button id="filter-btn" type="button">
+                <img id="filter" src="assets/filter.svg" alt="filtrera sökresultat" />
+            </button>
+
+        </div>
+    </div>
+
+    <div class="filter-menu" id="filter-menu">
+        <button class="close-btn" id="close-filter">&times;</button>
+        <h2>Sotering</h2>
+        <form>
+
+            
+                <div>
+                    <input type="radio" id="A-Z" name="sorting" value="A-Z" checked />
+                    <label for="huey">A-Z</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="Z-A" name="sorting" value="Z-A" />
+                    <label for="dewey">Z-A</label>
+                </div>
+
+                <div class="filter-option">
+                    <input type="checkbox" id="customizeable">
+                    <label for="other">Anpassningsbar</label>
+                </div>
+
+                <div class="filter-option">
+                    <input type="checkbox" id="non-customizeable">
+                    <label for="other">Ej anpassningsbar</label>
+                </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
