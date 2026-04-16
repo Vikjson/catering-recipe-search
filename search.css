@@ -100,10 +100,6 @@ html {
     font-size: 2rem;
 }
 
-.hidden {
-    display: none;
-}
-
 
 #filter-btn {
     border: none;
@@ -275,4 +271,8 @@ justify-content: center;
     border-radius: 15px;
     color: white;
     font-size: 1rem;
+}
+
+.hidden {
+    display: none !important;
 }
