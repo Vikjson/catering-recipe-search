@@ -110,6 +110,13 @@
                         <label><input type="checkbox"> Laktos</label>
                         <label><input type="checkbox"> Mjölkprotein</label>
                         <label><input type="checkbox"> Skaldjur</label>
+                        <label><input type="checkbox"> Lök</label>
+                        <label><input type="checkbox"> Fisk</label>
+                        <label><input type="checkbox"> Ägg</label>
+                        <label><input type="checkbox"> Soja</label>
+                        <label><input type="checkbox"> Sesam</label>
+                        <label><input type="checkbox"> Kokos</label>
+                        <label><input type="checkbox"> Glukos</label>
                     </div>
 
                     <div class="filter-column">
@@ -118,6 +125,9 @@
                         <label><input type="checkbox"> Vegansk</label>
                         <label><input type="checkbox"> Halal</label>
                         <label><input type="checkbox"> Peskitarian</label>
+                        <label><input type="checkbox"> Diabetiker</label>
+                        <label><input type="checkbox"> Graviditet</label>
+                        <label><input type="checkbox"> Kosher</label>
                     </div>
 
                     <div class="filter-column">
@@ -126,6 +136,12 @@
                         <label><input type="checkbox"> Kyckling</label>
                         <label><input type="checkbox"> Fisk</label>
                         <label><input type="checkbox"> Skaldjur</label>
+                        <label><input type="checkbox"> Vegofärs</label>
+                        <label><input type="checkbox"> Lammkött</label>
+                        <label><input type="checkbox"> Svamp</label>
+                        <label><input type="checkbox"> Vilt</label>
+                        <label><input type="checkbox"> Fågel</label>
+
                     </div>
 
                     <div class="filter-column">
@@ -134,6 +150,9 @@
                         <label><input type="checkbox"> Ris</label>
                         <label><input type="checkbox"> Rotfrukt</label>
                         <label><input type="checkbox"> Bröd</label>
+                        <label><input type="checkbox"> Havre</label>
+                        <label><input type="checkbox"> Bönor</label>
+                        <label><input type="checkbox"> Linser</label>
                     </div>
                 </div>
             </section>
@@ -144,244 +163,241 @@
                     <label><input type="checkbox">$<em>$$</em></label>
                     <label><input type="checkbox">$$<em>$</em></label>
                     <label><input type="checkbox">$$$</label>
-                </div> </section>
-
-                <section class="radio-options-1-row" id="difficulty-options">
-                    <h2>Nivå</h2>
-                    <div class="radio-row">
-
-                        <label class="radio-option">
-                            <input type="radio" id="difficulty-simple" name="difficulty" value="difficulty-simple" />
-                            <span>Enkelt</span>
-                        </label>
-
-
-                        <label class="radio-option">
-                            <input type="radio" id="difficulty-medium" name="difficulty" value="difficulty-medium" />
-                            <span>Medel</span>
-                        </label>
-
-
-                        <label class="radio-option">
-                            <input type="radio" id="difficulty-difficult" name="difficulty"
-                                value="difficulty-difficult" />
-                            <span>Svårt</span>
-                        </label>
-                    </div>
-                </section>
-
-                <section class="radio-options-1-row" id="preparation-time-options">
-                    <h2>Tillagningstid</h2>
-                    <div class="radio-row">
-
-                        <label class="radio-option">
-                            <input type="radio" id="preparation-fast" name="preparation-time"
-                                value="preparation-fast" />
-                            <span>Snabb</span>
-                        </label>
-
-
-                        <label class="radio-option">
-                            <input type="radio" id="preparation-medium" name="preparation-time"
-                                value="preparation-medium" />
-                            <span>Medel</span>
-                        </label>
-
-
-                        <label class="radio-option">
-                            <input type="radio" id="preparation-long" name="preparation-time"
-                                value="preparation-long" />
-                            <span>Länge</span>
-                        </label>
-                    </div>
-                </section>
-
-                <section class="radio-options-1-row" id="transport-options">
-                    <h2>Transport</h2>
-                    <div class="radio-row">
-
-                        <label class="radio-option">
-                            <input type="radio" id="transport-simple" name="transport-options"
-                                value="transport-simple" />
-                            <span>Enkelt att transportera</span>
-                        </label>
-
-
-                        <label class="radio-option">
-                            <input type="radio" id="transport-difficult" name="transport-options"
-                                value="transport-difficult" />
-                            <span>Svårt att transportera</span>
-                        </label>
-                    </div>
-                </section>
-
-                <div class="button-wrapper">
-                    <button class="apply-filters-btn">Tillämpa filter</button>
                 </div>
+            </section>
+
+            <section class="radio-options-1-row" id="difficulty-options">
+                <h2>Nivå</h2>
+                <div class="radio-row">
+
+                    <label class="radio-option">
+                        <input type="radio" id="difficulty-simple" name="difficulty" value="difficulty-simple" />
+                        <span>Enkelt</span>
+                    </label>
+
+
+                    <label class="radio-option">
+                        <input type="radio" id="difficulty-medium" name="difficulty" value="difficulty-medium" />
+                        <span>Medel</span>
+                    </label>
+
+
+                    <label class="radio-option">
+                        <input type="radio" id="difficulty-difficult" name="difficulty" value="difficulty-difficult" />
+                        <span>Svårt</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="radio-options-1-row" id="preparation-time-options">
+                <h2>Tillagningstid</h2>
+                <div class="radio-row">
+
+                    <label class="radio-option">
+                        <input type="radio" id="preparation-fast" name="preparation-time" value="preparation-fast" />
+                        <span>Snabb</span>
+                    </label>
+
+
+                    <label class="radio-option">
+                        <input type="radio" id="preparation-medium" name="preparation-time"
+                            value="preparation-medium" />
+                        <span>Medel</span>
+                    </label>
+
+
+                    <label class="radio-option">
+                        <input type="radio" id="preparation-long" name="preparation-time" value="preparation-long" />
+                        <span>Länge</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="radio-options-1-row" id="transport-options">
+                <h2>Transport</h2>
+                <div class="radio-row">
+
+                    <label class="radio-option">
+                        <input type="radio" id="transport-simple" name="transport-options" value="transport-simple" />
+                        <span>Enkelt att transportera</span>
+                    </label>
+
+
+                    <label class="radio-option">
+                        <input type="radio" id="transport-difficult" name="transport-options"
+                            value="transport-difficult" />
+                        <span>Svårt att transportera</span>
+                    </label>
+                </div>
+            </section>
+
+            <div class="button-wrapper">
+                <button class="apply-filters-btn">Tillämpa filter</button>
+            </div>
         </form>
     </div>
 
 
-    
-            <div class="textbox" id="recipes">
-                <div class="textbox" id="card">
-                    <img src="assets/anka.png" alt="Anka">
-                    <h1>Anka á l'orange</h1>
-                    <div class="textbox" id="tags">
-                        <div class="textbox" id="tag">
-                            <p>#Huvudrätt</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Fransk</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Fågel</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Mjölkprotein</p>
-                        </div>
-                        <div class="textbox" id="red-tag">
-                            <p>#Ej anpassningsbar</p>
-                        </div>
-                    </div>
-                    <div class="textbox" id="dollars">
-                        <img src="assets/heavy_dollar_sign.png" class="first-dollar">
-                        <img src="assets/heavy_dollar_sign2.png" class="dollar">
-                        <img src="assets/heavy_dollar_sign2.png" class="dollar">
-                    </div>
-                    <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Länge</p>
-                    <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
-                    <p id="icon-text"><img src="assets/car.png" class="icon">Svårt att transportera</p>
+
+    <div class="textbox" id="recipes">
+        <div class="textbox" id="card">
+            <img src="assets/anka.png" alt="Anka">
+            <h1>Anka á l'orange</h1>
+            <div class="textbox" id="tags">
+                <div class="textbox" id="tag">
+                    <p>#Huvudrätt</p>
                 </div>
-                <div class="textbox" id="card">
-                    <img src="assets/arancini.png" alt="Arancini">
-                    <h1>Arancini</h1>
-                    <div class="textbox" id="tags">
-                        <div class="textbox" id="tag">
-                            <p>#Huvudrätt</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Italiensk</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Vegetarisk</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Mjölkprotein</p>
-                        </div>
-                        <div class="textbox" id="green-tag">
-                            <p>#Anpassningsbar</p>
-                        </div>
-                    </div>
-                    <div class="textbox" id="dollars">
-                        <img src="assets/heavy_dollar_sign.png" class="first-dollar">
-                        <img src="assets/heavy_dollar_sign2.png" class="dollar">
-                        <img src="assets/heavy_dollar_sign2.png" class="dollar">
-                    </div>
-                    <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Snabb</p>
-                    <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
-                    <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+                <div class="textbox" id="tag">
+                    <p>#Fransk</p>
                 </div>
-                <div class="textbox" id="card">
-                    <img src="assets/aubergine.png" alt="Aubergine">
-                    <h1>Aubergineröra med bröd</h1>
-                    <div class="textbox" id="tags">
-                        <div class="textbox" id="tag">
-                            <p>#Förrätt</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Seasam</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Vegetarisk</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Gluten</p>
-                        </div>
-                        <div class="textbox" id="red-tag">
-                            <p>#Ej anpassningsbar</p>
-                        </div>
-                    </div>
-                    <div class="textbox" id="dollars">
-                        <img src="assets/heavy_dollar_sign.png" class="first-dollar">
-                        <img src="assets/heavy_dollar_sign2.png" class="dollar">
-                        <img src="assets/heavy_dollar_sign2.png" class="dollar">
-                    </div>
-                    <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Snabb</p>
-                    <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
-                    <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+                <div class="textbox" id="tag">
+                    <p>#Fågel</p>
                 </div>
-                <div class="textbox" id="card">
-                    <img src="assets/baklava.png" alt="Baklava">
-                    <h1>Baklava</h1>
-                    <div class="textbox" id="tags">
-                        <div class="textbox" id="tag">
-                            <p>#Dessert</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Nötter</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Gluten</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Mjölkprotein</p>
-                        </div>
-                        <div class="textbox" id="red-tag">
-                            <p>#Ej anpassningsbar</p>
-                        </div>
-                    </div>
-                    <div class="textbox" id="dollars">
-                        <img src="assets/heavy_dollar_sign.png" class="first-dollar">
-                        <img src="assets/heavy_dollar_sign2.png" class="dollar">
-                        <img src="assets/heavy_dollar_sign2.png" class="dollar">
-                    </div>
-                    <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Medel</p>
-                    <p id="icon-text"><img src="assets/frog.png" class="icon">Medel</p>
-                    <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+                <div class="textbox" id="tag">
+                    <p>#Mjölkprotein</p>
                 </div>
-                <div class="textbox" id="card">
-                    <img src="assets/blueberry.png" alt="Blåbär">
-                    <h1>Blåbärsbullar</h1>
-                    <div class="textbox" id="tags">
-                        <div class="textbox" id="tag">
-                            <p>#Dessert</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Mjölkprotein</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Gluten</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Gluten</p>
-                        </div>
-                        <div class="textbox" id="green-tag">
-                            <p>#Anpassningsbar</p>
-                        </div>
-                    </div>
+                <div class="textbox" id="red-tag">
+                    <p>#Ej anpassningsbar</p>
                 </div>
-                <div class="textbox" id="card">
-                    <img src="assets/burritos.png" alt="Burritos">
-                    <h1>Burritos</h1>
-                    <div class="textbox" id="tags">
-                        <div class="textbox" id="tag">
-                            <p>#Huvudrätt</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Nötkött</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Gluten</p>
-                        </div>
-                        <div class="textbox" id="tag">
-                            <p>#Mjölkprotein</p>
-                        </div>
-                        <div class="textbox" id="green-tag">
-                            <p>#Anpassningsbar</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="textbox" id="dollars">
+                <img src="assets/heavy_dollar_sign.png" class="first-dollar">
+                <img src="assets/heavy_dollar_sign2.png" class="dollar">
+                <img src="assets/heavy_dollar_sign2.png" class="dollar">
+            </div>
+            <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Länge</p>
+            <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
+            <p id="icon-text"><img src="assets/car.png" class="icon">Svårt att transportera</p>
+        </div>
+        <div class="textbox" id="card">
+            <img src="assets/arancini.png" alt="Arancini">
+            <h1>Arancini</h1>
+            <div class="textbox" id="tags">
+                <div class="textbox" id="tag">
+                    <p>#Huvudrätt</p>
                 </div>
+                <div class="textbox" id="tag">
+                    <p>#Italiensk</p>
+                </div>
+                <div class="textbox" id="tag">
+                    <p>#Vegetarisk</p>
+                </div>
+                <div class="textbox" id="tag">
+                    <p>#Mjölkprotein</p>
+                </div>
+                <div class="textbox" id="green-tag">
+                    <p>#Anpassningsbar</p>
+                </div>
+            </div>
+            <div class="textbox" id="dollars">
+                <img src="assets/heavy_dollar_sign.png" class="first-dollar">
+                <img src="assets/heavy_dollar_sign2.png" class="dollar">
+                <img src="assets/heavy_dollar_sign2.png" class="dollar">
+            </div>
+            <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Snabb</p>
+            <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
+            <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+        </div>
+        <div class="textbox" id="card">
+            <img src="assets/aubergine.png" alt="Aubergine">
+            <h1>Aubergineröra med bröd</h1>
+            <div class="textbox" id="tags">
+                <div class="textbox" id="tag">
+                    <p>#Förrätt</p>
+                </div>
+                <div class="textbox" id="tag">
+                    <p>#Seasam</p>
+                </div>
+                <div class="textbox" id="tag">
+                    <p>#Vegetarisk</p>
+                </div>
+                <div class="textbox" id="tag">
+                    <p>#Gluten</p>
+                </div>
+                <div class="textbox" id="red-tag">
+                    <p>#Ej anpassningsbar</p>
+                </div>
+            </div>
+            <div class="textbox" id="dollars">
+                <img src="assets/heavy_dollar_sign.png" class="first-dollar">
+                <img src="assets/heavy_dollar_sign2.png" class="dollar">
+                <img src="assets/heavy_dollar_sign2.png" class="dollar">
+            </div>
+            <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Snabb</p>
+            <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
+            <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+        </div>
+        <div class="textbox" id="card">
+            <img src="assets/baklava.png" alt="Baklava">
+            <h1>Baklava</h1>
+            <div class="textbox" id="tags">
+                <div class="textbox" id="tag">
+                    <p>#Dessert</p>
+                </div>
+                <div class="textbox" id="tag">
+                    <p>#Nötter</p>
+                </div>
+                <div class="textbox" id="tag">
+                    <p>#Gluten</p>
+                </div>
+                <div class="textbox" id="tag">
+                    <p>#Mjölkprotein</p>
+                </div>
+                <div class="textbox" id="red-tag">
+                    <p>#Ej anpassningsbar</p>
+                </div>
+            </div>
+            <div class="textbox" id="dollars">
+                <img src="assets/heavy_dollar_sign.png" class="first-dollar">
+                <img src="assets/heavy_dollar_sign2.png" class="dollar">
+                <img src="assets/heavy_dollar_sign2.png" class="dollar">
+            </div>
+            <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Medel</p>
+            <p id="icon-text"><img src="assets/frog.png" class="icon">Medel</p>
+            <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+        </div>
+        <div class="textbox" id="card">
+            <img src="assets/blueberry.png" alt="Blåbär">
+            <h1>Blåbärsbullar</h1>
+            <div class="textbox" id="tags">
+                <div class="textbox" id="tag">
+                    <p>#Dessert</p>
+                </div>
+                <div class="textbox" id="tag">
+                    <p>#Mjölkprotein</p>
+                </div>
+                <div class="textbox" id="tag">
+                    <p>#Gluten</p>
+                </div>
+                <div class="textbox" id="tag">
+                    <p>#Gluten</p>
+                </div>
+                <div class="textbox" id="green-tag">
+                    <p>#Anpassningsbar</p>
+                </div>
+            </div>
+        </div>
+        <div class="textbox" id="card">
+            <img src="assets/burritos.png" alt="Burritos">
+            <h1>Burritos</h1>
+            <div class="textbox" id="tags">
+                <div class="textbox" id="tag">
+                    <p>#Huvudrätt</p>
+                </div>
+                <div class="textbox" id="tag">
+                    <p>#Nötkött</p>
+                </div>
+                <div class="textbox" id="tag">
+                    <p>#Gluten</p>
+                </div>
+                <div class="textbox" id="tag">
+                    <p>#Mjölkprotein</p>
+                </div>
+                <div class="textbox" id="green-tag">
+                    <p>#Anpassningsbar</p>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
