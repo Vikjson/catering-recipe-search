@@ -21,6 +21,8 @@
             </button>
         </form>
 
+
+
         <div id="tags-filter-container">
             <div id="selected-tags" class="selected-tags hidden">
                 <div class="search-tag">
@@ -43,15 +45,16 @@
                 </div>
             </div>
             <button id="filter-btn" type="button">
-                <img id="filter" src="assets/filter.svg" alt="filtrera sökresultat" />
+                <img id="filter-icon" src="assets/filter.svg" alt="filtrera sökresultat" />
             </button>
 
         </div>
+
     </div>
 
-    <div class="filter-menu-container" id="filter-menu-container">
-        <button class="close-btn" id="close-filter-btn">&times;</button>
-        <form>
+    <div class="filter-menu-background" id="filter-menu-background">
+        <form class="filter-menu-container" id="filter-menu-container">
+            <button class="close-btn" id="close-filter-btn">&times;</button>
 
 
             <section class="radio-options">
@@ -135,80 +138,86 @@
                 </div>
             </section>
 
-            <section class="pricing-options">
+            <section class="check-options-1-row" id="pricing-options">
                 <h2>Prisklass</h2>
-                <label><input type="checkbox">$<em>$$</em></label>
-                <label><input type="checkbox">$$<em>$</em></label>
-                <label><input type="checkbox">$$$</label>
-            </section>
+                <div class="check-row">
+                    <label><input type="checkbox">$<em>$$</em></label>
+                    <label><input type="checkbox">$$<em>$</em></label>
+                    <label><input type="checkbox">$$$</label>
+                </div </section>
 
-            <section class="difficulty-options">
-                <h3>Nivå</h3>
-                <div class="radio-row">
+                <section class="radio-options-1-row" id="difficulty-options">
+                    <h2>Nivå</h2>
+                    <div class="radio-row">
 
-                    <label class="radio-option">
-                        <input type="radio" id="difficulty-simple" name="difficulty" value="difficulty-simple" />
-                        <span>Enkelt</span>
-                    </label>
-
-
-                    <label class="radio-option">
-                        <input type="radio" id="difficulty-medium" name="difficulty" value="difficulty-medium" />
-                        <span>Medel</span>
-                    </label>
+                        <label class="radio-option">
+                            <input type="radio" id="difficulty-simple" name="difficulty" value="difficulty-simple" />
+                            <span>Enkelt</span>
+                        </label>
 
 
-                    <label class="radio-option">
-                        <input type="radio" id="difficulty-difficult" name="difficulty" value="difficulty-difficult" />
-                        <span>Svårt</span>
-                    </label>
+                        <label class="radio-option">
+                            <input type="radio" id="difficulty-medium" name="difficulty" value="difficulty-medium" />
+                            <span>Medel</span>
+                        </label>
+
+
+                        <label class="radio-option">
+                            <input type="radio" id="difficulty-difficult" name="difficulty"
+                                value="difficulty-difficult" />
+                            <span>Svårt</span>
+                        </label>
+                    </div>
+                </section>
+
+                <section class="radio-options-1-row" id="preparation-time-options">
+                    <h2>Tillagningstid</h2>
+                    <div class="radio-row">
+
+                        <label class="radio-option">
+                            <input type="radio" id="preparation-fast" name="preparation-time"
+                                value="preparation-fast" />
+                            <span>Snabb</span>
+                        </label>
+
+
+                        <label class="radio-option">
+                            <input type="radio" id="preparation-medium" name="preparation-time"
+                                value="preparation-medium" />
+                            <span>Medel</span>
+                        </label>
+
+
+                        <label class="radio-option">
+                            <input type="radio" id="preparation-long" name="preparation-time"
+                                value="preparation-long" />
+                            <span>Länge</span>
+                        </label>
+                    </div>
+                </section>
+
+                <section class="radio-options-1-row" id="transport-options">
+                    <h2>Transport</h2>
+                    <div class="radio-row">
+
+                        <label class="radio-option">
+                            <input type="radio" id="transport-simple" name="transport-options"
+                                value="transport-simple" />
+                            <span>Enkelt att transportera</span>
+                        </label>
+
+
+                        <label class="radio-option">
+                            <input type="radio" id="transport-difficult" name="transport-options"
+                                value="transport-difficult" />
+                            <span>Svårt att transportera</span>
+                        </label>
+                    </div>
+                </section>
+
+                <div class="button-wrapper">
+                    <button class="apply-filters-btn">Tillämpa filter</button>
                 </div>
-            </section>
-
-            <section class="preparation-time-options">
-                <h3>Tillagningstid</h3>
-                <div class="radio-row">
-
-                    <label class="radio-option">
-                        <input type="radio" id="preparation-fast" name="preparation-time" value="preparation-fast" />
-                        <span>Snabb</span>
-                    </label>
-
-
-                    <label class="radio-option">
-                        <input type="radio" id="preparation-medium" name="preparation-time"
-                            value="preparation-medium" />
-                        <span>Medel</span>
-                    </label>
-
-
-                    <label class="radio-option">
-                        <input type="radio" id="preparation-long" name="preparation-time" value="preparation-long" />
-                        <span>Länge</span>
-                    </label>
-                </div>
-            </section>
-
-            <section class="transport-options">
-                <h3>Transport</h3>
-                <div class="radio-row">
-
-                    <label class="radio-option">
-                        <input type="radio" id="transport-simple" name="transport-options" value="transport-simple" />
-                        <span>Enkelt</span>
-                    </label>
-
-
-                    <label class="radio-option">
-                        <input type="radio" id="transport-difficult" name="transport-options"
-                            value="transport-difficult" />
-                        <span>Svårt</span>
-                    </label>
-                </div>
-            </section>
-
-            <button class="apply-filters-btn">Tillämpa filter</button>
-
         </form>
     </div>
 
