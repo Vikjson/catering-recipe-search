@@ -33,6 +33,7 @@ h1 {
     column-gap: 4rem;
     row-gap: 2rem;
     flex-wrap: wrap;
+    margin-top: 1.5rem;
 }
 
 #tags {

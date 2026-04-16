@@ -8,6 +8,7 @@
 const input = document.getElementById("searchbar");
 const tags = document.getElementById("selected-tags");
 const closeTag = document.querySelectorAll(".close-btn");
+const searchButton = document.getElementById("search-btn");
 
 
 const showTags = () => {
@@ -22,6 +23,10 @@ input.addEventListener("keydown", (e) => {
   }
 });
 
+searchButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  showTags();
+});
 
 
 closeTag.forEach(btn => {
@@ -31,6 +36,11 @@ closeTag.forEach(btn => {
 });
 
 
+/**
+ * Show filter menu with filter button
+ * 
+ * and close filters with X-button on filter menu.
+ */
 const filterMenu = document.getElementById("filter-menu-background");
 const closeFiltersButton = document.getElementById("close-filter-btn");
 const filterButton = document.getElementById("filter-btn");
