@@ -6,11 +6,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catering</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="search.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
 </head>
 
 <body>
+
+    <div class="search-wrapper">
+        <input type="text" id="searchbar" placeholder="sök bland rätter" />
+        <div id="tags-filter-container">
+
+            <div id="selected-tags" class="selected-tags hidden">
+                <div class="search-tag">
+                    <div class="tag-text">
+                        <p>Glutenfritt</p>
+                        <button class="close-btn">&times;</button>
+                    </div>
+                </div>
+                <div class="search-tag">
+                    <div class="tag-text">
+                        <p>Anpassningsbar</p>
+                        <button class="close-btn">&times;</button>
+                    </div>
+                </div>
+                <div class="search-tag">
+                    <div class="tag-text">
+                        <p>Nötkött</p>
+                        <button class="close-btn">&times;</button>
+                    </div>
+                </div>
+            </div>
+            <button id="filter-btn" type="button">
+                <img id="filter" src="assets/filter.svg" alt="filtrera sökresultat" />
+            </button>
+
+        </div>
+    </div>
+
+    <div class="filter-menu-container" id="filter-menu-container">
+        <button class="close-btn" id="close-filter-btn">&times;</button>
+        <form>
+
+
+            <section class="radio-options">
+                <h2>Sortering</h2>
+
+                <div class="radio-grid">
+
+                    <label class="radio-option">
+                        <input type="radio" id="A-Z" name="sorting" value="A-Z" />
+                        <span>A-Z</span>
+                    </label>
+
+                    <label class="radio-option">
+                        <input type="radio" id="A-Z" name="sorting" value="A-Z" />
+                        <span>Endast förrätter</span>
+                    </label>
+
+                    <label class="radio-option">
+                        <input type="radio" id="A-Z" name="sorting" value="A-Z" />
+                        <span>Endast dessert</span>
+                    </label>
+
+                    <label class="radio-option">
+                        <input type="radio" id="Z-A" name="sorting" value="Z-A" />
+                        <span>Z-A</span>
+                    </label>
+
+                    <label class="radio-option">
+                        <input type="radio" id="Z-A" name="sorting" value="Z-A" />
+                        <span>Endast huvudrätter</span>
+                    </label>
+
+                    <label class="radio-option">
+                        <input type="radio" id="most-viewed" name="sorting" value="most-viewed" />
+                        <span>Mest sedda</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="filter-section">
+
+                <div class="filter-top-options">
+                    <h2>Matfilter</h2>
+                    <label><input type="checkbox"> Anpassningsbar</label>
+                    <label><input type="checkbox"> Ej Anpassningsbar</label>
+                </div>
+
+                <div class="filter-columns">
+                    <div class="filter-column">
+                        <h3>Allergier</h3>
+                        <label><input type="checkbox"> Nötter</label>
+                        <label><input type="checkbox"> Gluten</label>
+                        <label><input type="checkbox"> Laktos</label>
+                        <label><input type="checkbox"> Mjölkprotein</label>
+                        <label><input type="checkbox"> Skaldjur</label>
+                    </div>
+
+                    <div class="filter-column">
+                        <h3>Specialkost</h3>
+                        <label><input type="checkbox"> Vegetarisk</label>
+                        <label><input type="checkbox"> Vegansk</label>
+                        <label><input type="checkbox"> Halal</label>
+                        <label><input type="checkbox"> Peskitarian</label>
+                    </div>
+
+                    <div class="filter-column">
+                        <h3>Protein</h3>
+                        <label><input type="checkbox"> Nötkött</label>
+                        <label><input type="checkbox"> Kyckling</label>
+                        <label><input type="checkbox"> Fisk</label>
+                        <label><input type="checkbox"> Skaldjur</label>
+                    </div>
+
+                    <div class="filter-column">
+                        <h3>Kolhydrater</h3>
+                        <label><input type="checkbox"> Pasta</label>
+                        <label><input type="checkbox"> Ris</label>
+                        <label><input type="checkbox"> Rotfrukt</label>
+                        <label><input type="checkbox"> Bröd</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pricing-options">
+                <h2>Prisklass</h2>
+                <label><input type="checkbox">$<em>$$</em></label>
+                <label><input type="checkbox">$$<em>$</em></label>
+                <label><input type="checkbox">$$$</label>
+            </section>
+
+            <section class="difficulty-options">
+                <h3>Nivå</h3>
+                <div class="radio-row">
+
+                    <label class="radio-option">
+                        <input type="radio" id="difficulty-simple" name="difficulty" value="difficulty-simple" />
+                        <span>Enkelt</span>
+                    </label>
+
+
+                    <label class="radio-option">
+                        <input type="radio" id="difficulty-medium" name="difficulty" value="difficulty-medium" />
+                        <span>Medel</span>
+                    </label>
+
+
+                    <label class="radio-option">
+                        <input type="radio" id="difficulty-difficult" name="difficulty" value="difficulty-difficult" />
+                        <span>Svårt</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="preparation-time-options">
+                <h3>Tillagningstid</h3>
+                <div class="radio-row">
+
+                    <label class="radio-option">
+                        <input type="radio" id="preparation-fast" name="preparation-time" value="preparation-fast" />
+                        <span>Snabb</span>
+                    </label>
+
+
+                    <label class="radio-option">
+                        <input type="radio" id="preparation-medium" name="preparation-time"
+                            value="preparation-medium" />
+                        <span>Medel</span>
+                    </label>
+
+
+                    <label class="radio-option">
+                        <input type="radio" id="preparation-long" name="preparation-time" value="preparation-long" />
+                        <span>Länge</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="transport-options">
+                <h3>Transport</h3>
+                <div class="radio-row">
+
+                    <label class="radio-option">
+                        <input type="radio" id="transport-simple" name="transport-options" value="transport-simple" />
+                        <span>Enkelt</span>
+                    </label>
+
+
+                    <label class="radio-option">
+                        <input type="radio" id="transport-difficult" name="transport-options"
+                            value="transport-difficult" />
+                        <span>Svårt</span>
+                    </label>
+                </div>
+            </section>
+
+            <button class="apply-filters-btn">Tillämpa filter</button>
+
+        </form>
+    </div>
+
+
     <div class="textbox" id="page">
         <div class="textbox" id="search-filter">
 
