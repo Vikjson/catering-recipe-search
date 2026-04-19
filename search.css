@@ -100,6 +100,12 @@ html {
     font-size: 2rem;
 }
 
+#clear-search-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 #filter-btn {
     border: none;
@@ -135,7 +141,7 @@ html {
     width: 100%;
     justify-content: center;
     padding: 1rem;
-   
+
 }
 
 .filter-menu-container h2 {
@@ -221,8 +227,9 @@ html {
 
 .filter-column+.filter-column {
     border-left: 2px solid #8f8f8f;
-    
+
 }
+
 /*
 #filter-column-1{
     border-left: 2px solid #8f8f8f;
@@ -260,9 +267,9 @@ html {
 
 }
 
-.button-wrapper{
-display: flex;
-justify-content: center;
+.button-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 .apply-filters-btn {
