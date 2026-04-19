@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetarisk Lasagne</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="recipe.css">
+    <script defer src="scriptRecipe.js"></script>
+</head>
+
+<body>
+
+    <div class="recipe-card">
+        <div class="header-nav">
+            <a href="#" class="back-arrow">←</a>
+        </div>
+
+        <div class="hero-section">
+            <div class="hero-left">
+                <img src="assets/image (6).png" alt="Lasagne" class="recipe-img">
+                <h3>Huvudingredienser</h3>
+                <ul class="main-ingredients-list">
+                    <li>Lasagneplattor</li>
+                    <li>Mozarella</li>
+                    <li>Vegofärs</li>
+                </ul>
+            </div>
+
+            <div class="hero-right">
+                <h1>
+                    Vegetarisk Lasagne <br>
+                    med vegofärs
+                </h1>
+                <p class="subtitle">Huvudrätt</p>
+                <p class="subtitle">Italienskt</p>
+                <div class="tags">
+                    <div class="tag-row">
+                        <span class="tag-black">Veg</span>
+                        <span class="tag-black">Laktosfri</span>
+                    </div>
+                    <span class="tag-green">Anpassningsbar</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="portion-selector">
+            <button class="portion-btn" onclick="changePortions(-1)">−</button>
+            <span class="portion-text"><span id="portion-count">4</span> Portioner</span>
+            <button class="portion-btn" onclick="changePortions(1)">+</button>
+        </div>
+
+        <div class="ingredients-section">
+            <h3>Ingredienser</h3>
+            <div id="ingredient-list" class="ingredients-grid"></div>
+        </div>
+
+        <div class="instructions-section">
+            <h3>Recept</h3>
+            <div class="step-container">
+                <div class="step">
+                    <input type="checkbox">
+                    <span>Sätt ugnen på 200 grader</span>
+                </div>
+                <div class="step">
+                    <input type="checkbox">
+                    <span>Hacka löken och vitlöken. Skala moroten och rotsellerin och riv dem på den grova sidan av
+                        rivjärnet</span>
+                </div>
+                <div class="step">
+                    <input type="checkbox">
+                    <span>Ta en stor kastrull, sätt på medelhög värme och tillsätt olivoljan</span>
+                </div>
+                <div class="step">
+                    <input type="checkbox">
+                    <span>Stek lök, vitlök, morot och rotselleri tills löken blir glansig. Tillsätt vegofärsen och stek
+                        tills den får lite färg. Tillsätt sedan tomatpuré och krossade tomater. Rör runt, höj värmen och
+                        tillsätt vinägern.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

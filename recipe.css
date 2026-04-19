@@ -1,0 +1,148 @@
+body {
+    background-color: #f9f9f9;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.recipe-card {
+    background: white;
+    width: 600px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.header-nav {
+    margin-bottom: 16px;
+}
+
+.back-arrow {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.hero-section {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.hero-left {
+    width: 262px;
+}
+
+.recipe-img {
+    width: 262px;
+    height: 235px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0 0 4px 0;
+    font-weight: 400;
+}
+
+.subtitle {
+    font-style: italic;
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.tags {
+    margin-top: 12px;
+}
+
+.tag-row {
+    margin-bottom: 8px;
+}
+
+.tag-black {
+    background: #2D2D2D;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+.tag-green {
+    background: #a8e3b2;
+    color: #1B4332;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 16px 0 8px 0;
+}
+
+.main-ingredients-list {
+    margin: 8px 0 0 0;
+    padding-left: 20px;
+}
+
+.portion-selector {
+    width: 549px;
+    height: 58px;
+    border: 1px solid #000;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    margin: 24px auto;
+    box-sizing: border-box;
+}
+
+.portion-btn {
+    width: 32px;
+    height: 32px;
+    background: #FFC08A;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portion-text {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.ingredients-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 24px;
+    margin-bottom: 32px;
+}
+
+.step {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    align-items: flex-start;
+}
+
+.step input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.step span {
+    font-size: 15px;
+    line-height: 1.5;
+}
