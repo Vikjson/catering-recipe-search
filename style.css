@@ -92,13 +92,13 @@ h1 {
 }
 
 .icon {
-    width: 2rem;
+    width: 1.8rem;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
 }
 
 .recipes-container p {
-    font-size: 82%;
+    font-size: 80%;
     margin: 0;
 }
 
