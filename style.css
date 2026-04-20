@@ -46,14 +46,14 @@ h1 {
     margin-top: 1.5rem;
 }
 
-#tags {
+.tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
     padding-left: 0.5rem;
 }
 
-#tag {
+.tag {
     border: 1px solid lightgray;
     border-radius: 10%;
     width: fit-content;
@@ -61,21 +61,21 @@ h1 {
     padding-right: 0.25rem;
 }
 
-#red-tag {
+.red-tag {
     border: 1px solid lightgray;
     border-radius: 10%;
     width: fit-content;
     background-color: rgb(255, 172, 172);
 }
 
-#green-tag {
+.green-tag {
     border: 1px solid lightgray;
     border-radius: 10%;
     width: fit-content;
     background-color: rgb(187, 229, 204);
 }
 
-#dollars {
+.dollars {
     display: flex;
     flex-direction: row;
 }
