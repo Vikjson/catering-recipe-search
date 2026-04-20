@@ -18,6 +18,10 @@ h1 {
     word-break: break-word;
 }
 
+.card-img {
+    width: 100%;
+}
+
 .card {
     border: 1px solid lightgray;
     border-radius: 4%;
