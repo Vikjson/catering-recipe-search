@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
     <div class="search-wrapper">
         <form class="search-bar-wrapper">
             <input type="text" id="searchbar" placeholder="sök bland rätter" />
@@ -20,8 +19,6 @@
                 <img src="assets/search.svg" alt="sök" id="search-btn-img" />
             </button>
         </form>
-
-
 
         <div id="tags-filter-container">
             <div id="selected-tags" class="selected-tags hidden">
@@ -48,15 +45,12 @@
             <button id="filter-btn" type="button">
                 <img id="filter-icon" src="assets/filter.svg" alt="filtrera sökresultat" />
             </button>
-
         </div>
-
     </div>
 
     <div class="filter-menu-background hidden" id="filter-menu-background">
         <form class="filter-menu-container" id="filter-menu-container">
             <button type="button" class="close-btn" id="close-filter-btn">&times;</button>
-
 
             <section class="radio-options">
                 <h2>Sortering</h2>
@@ -142,7 +136,6 @@
                         <label><input type="checkbox"> Svamp</label>
                         <label><input type="checkbox"> Vilt</label>
                         <label><input type="checkbox"> Fågel</label>
-
                     </div>
 
                     <div class="filter-column">
@@ -176,12 +169,10 @@
                         <span>Enkelt</span>
                     </label>
 
-
                     <label class="radio-option">
                         <input type="radio" id="difficulty-medium" name="difficulty" value="difficulty-medium" />
                         <span>Medel</span>
                     </label>
-
 
                     <label class="radio-option">
                         <input type="radio" id="difficulty-difficult" name="difficulty" value="difficulty-difficult" />
@@ -199,13 +190,11 @@
                         <span>Snabb</span>
                     </label>
 
-
                     <label class="radio-option">
                         <input type="radio" id="preparation-medium" name="preparation-time"
                             value="preparation-medium" />
                         <span>Medel</span>
                     </label>
-
 
                     <label class="radio-option">
                         <input type="radio" id="preparation-long" name="preparation-time" value="preparation-long" />
@@ -222,7 +211,6 @@
                         <input type="radio" id="transport-simple" name="transport-options" value="transport-simple" />
                         <span>Enkelt att transportera</span>
                     </label>
-
 
                     <label class="radio-option">
                         <input type="radio" id="transport-difficult" name="transport-options"
@@ -242,162 +230,174 @@
 
     <div class="recipes-container" id="recipes">
         <div class="card" id="anka">
-            <img src="assets/anka.png" alt="Anka">
-            <h1>Anka á l'orange</h1>
-            <div class="textbox" id="tags">
-                <div class="textbox" id="tag">
-                    <p>#Huvudrätt</p>
+            <a href="recipe.html" class="card-link">
+                <img src="assets/anka.png" alt="Anka">
+                <h1>Anka á l'orange</h1>
+                <div class="textbox" id="tags">
+                    <div class="textbox" id="tag">
+                        <p>#Huvudrätt</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Fransk</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Fågel</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Mjölkprotein</p>
+                    </div>
+                    <div class="textbox" id="red-tag">
+                        <p>#Ej anpassningsbar</p>
+                    </div>
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Fransk</p>
+                <div class="textbox" id="dollars">
+                    <img src="assets/heavy_dollar_sign.png" class="first-dollar">
+                    <img src="assets/heavy_dollar_sign2.png" class="dollar">
+                    <img src="assets/heavy_dollar_sign2.png" class="dollar">
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Fågel</p>
-                </div>
-                <div class="textbox" id="tag">
-                    <p>#Mjölkprotein</p>
-                </div>
-                <div class="textbox" id="red-tag">
-                    <p>#Ej anpassningsbar</p>
-                </div>
-            </div>
-            <div class="textbox" id="dollars">
-                <img src="assets/heavy_dollar_sign.png" class="first-dollar">
-                <img src="assets/heavy_dollar_sign2.png" class="dollar">
-                <img src="assets/heavy_dollar_sign2.png" class="dollar">
-            </div>
-            <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Länge</p>
-            <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
-            <p id="icon-text"><img src="assets/car.png" class="icon">Svårt att transportera</p>
+                <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Länge</p>
+                <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
+                <p id="icon-text"><img src="assets/car.png" class="icon">Svårt att transportera</p>
+            </a>
         </div>
         <div class="card" id="arancini">
-            <img src="assets/arancini.png" alt="Arancini">
-            <h1>Arancini</h1>
-            <div class="textbox" id="tags">
-                <div class="textbox" id="tag">
-                    <p>#Huvudrätt</p>
+            <a href="recipe.html" class="card-link">
+                <img src="assets/arancini.png" alt="Arancini">
+                <h1>Arancini</h1>
+                <div class="textbox" id="tags">
+                    <div class="textbox" id="tag">
+                        <p>#Huvudrätt</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Italiensk</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Vegetarisk</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Mjölkprotein</p>
+                    </div>
+                    <div class="textbox" id="green-tag">
+                        <p>#Anpassningsbar</p>
+                    </div>
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Italiensk</p>
+                <div class="textbox" id="dollars">
+                    <img src="assets/heavy_dollar_sign.png" class="first-dollar">
+                    <img src="assets/heavy_dollar_sign2.png" class="dollar">
+                    <img src="assets/heavy_dollar_sign2.png" class="dollar">
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Vegetarisk</p>
-                </div>
-                <div class="textbox" id="tag">
-                    <p>#Mjölkprotein</p>
-                </div>
-                <div class="textbox" id="green-tag">
-                    <p>#Anpassningsbar</p>
-                </div>
-            </div>
-            <div class="textbox" id="dollars">
-                <img src="assets/heavy_dollar_sign.png" class="first-dollar">
-                <img src="assets/heavy_dollar_sign2.png" class="dollar">
-                <img src="assets/heavy_dollar_sign2.png" class="dollar">
-            </div>
-            <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Snabb</p>
-            <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
-            <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+                <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Snabb</p>
+                <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
+                <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+            </a>
         </div>
         <div class="card" id="aubergine">
-            <img src="assets/aubergine.png" alt="Aubergine">
-            <h1>Aubergineröra med bröd</h1>
-            <div class="textbox" id="tags">
-                <div class="textbox" id="tag">
-                    <p>#Förrätt</p>
+            <a href="recipe.html" class="card-link">
+                <img src="assets/aubergine.png" alt="Aubergine">
+                <h1>Aubergineröra med bröd</h1>
+                <div class="textbox" id="tags">
+                    <div class="textbox" id="tag">
+                        <p>#Förrätt</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Seasam</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Vegetarisk</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Gluten</p>
+                    </div>
+                    <div class="textbox" id="red-tag">
+                        <p>#Ej anpassningsbar</p>
+                    </div>
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Seasam</p>
+                <div class="textbox" id="dollars">
+                    <img src="assets/heavy_dollar_sign.png" class="first-dollar">
+                    <img src="assets/heavy_dollar_sign2.png" class="dollar">
+                    <img src="assets/heavy_dollar_sign2.png" class="dollar">
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Vegetarisk</p>
-                </div>
-                <div class="textbox" id="tag">
-                    <p>#Gluten</p>
-                </div>
-                <div class="textbox" id="red-tag">
-                    <p>#Ej anpassningsbar</p>
-                </div>
-            </div>
-            <div class="textbox" id="dollars">
-                <img src="assets/heavy_dollar_sign.png" class="first-dollar">
-                <img src="assets/heavy_dollar_sign2.png" class="dollar">
-                <img src="assets/heavy_dollar_sign2.png" class="dollar">
-            </div>
-            <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Snabb</p>
-            <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
-            <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+                <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Snabb</p>
+                <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
+                <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+            </a>
         </div>
         <div class="card" id="baklava">
-            <img src="assets/baklava.png" alt="Baklava">
-            <h1>Baklava</h1>
-            <div class="textbox" id="tags">
-                <div class="textbox" id="tag">
-                    <p>#Dessert</p>
+            <a href="recipe.html" class="card-link">
+                <img src="assets/baklava.png" alt="Baklava">
+                <h1>Baklava</h1>
+                <div class="textbox" id="tags">
+                    <div class="textbox" id="tag">
+                        <p>#Dessert</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Nötter</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Gluten</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Mjölkprotein</p>
+                    </div>
+                    <div class="textbox" id="red-tag">
+                        <p>#Ej anpassningsbar</p>
+                    </div>
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Nötter</p>
+                <div class="textbox" id="dollars">
+                    <img src="assets/heavy_dollar_sign.png" class="first-dollar">
+                    <img src="assets/heavy_dollar_sign2.png" class="dollar">
+                    <img src="assets/heavy_dollar_sign2.png" class="dollar">
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Gluten</p>
-                </div>
-                <div class="textbox" id="tag">
-                    <p>#Mjölkprotein</p>
-                </div>
-                <div class="textbox" id="red-tag">
-                    <p>#Ej anpassningsbar</p>
-                </div>
-            </div>
-            <div class="textbox" id="dollars">
-                <img src="assets/heavy_dollar_sign.png" class="first-dollar">
-                <img src="assets/heavy_dollar_sign2.png" class="dollar">
-                <img src="assets/heavy_dollar_sign2.png" class="dollar">
-            </div>
-            <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Medel</p>
-            <p id="icon-text"><img src="assets/frog.png" class="icon">Medel</p>
-            <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+                <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Medel</p>
+                <p id="icon-text"><img src="assets/frog.png" class="icon">Medel</p>
+                <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+            </a>
         </div>
         <div class="card" id="blueberry">
-            <img src="assets/blueberry.png" alt="Blåbär">
-            <h1>Blåbärsbullar</h1>
-            <div class="textbox" id="tags">
-                <div class="textbox" id="tag">
-                    <p>#Dessert</p>
+            <a href="recipe.html" class="card-link">
+                <img src="assets/blueberry.png" alt="Blåbär">
+                <h1>Blåbärsbullar</h1>
+                <div class="textbox" id="tags">
+                    <div class="textbox" id="tag">
+                        <p>#Dessert</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Mjölkprotein</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Gluten</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Gluten</p>
+                    </div>
+                    <div class="textbox" id="green-tag">
+                        <p>#Anpassningsbar</p>
+                    </div>
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Mjölkprotein</p>
-                </div>
-                <div class="textbox" id="tag">
-                    <p>#Gluten</p>
-                </div>
-                <div class="textbox" id="tag">
-                    <p>#Gluten</p>
-                </div>
-                <div class="textbox" id="green-tag">
-                    <p>#Anpassningsbar</p>
-                </div>
-            </div>
+            </a>
         </div>
         <div class="card" id="burritos">
-            <img src="assets/burritos.png" alt="Burritos">
-            <h1>Burritos</h1>
-            <div class="textbox" id="tags">
-                <div class="textbox" id="tag">
-                    <p>#Huvudrätt</p>
+            <a href="recipe.html" class="card-link">
+                <img src="assets/burritos.png" alt="Burritos">
+                <h1>Burritos</h1>
+                <div class="textbox" id="tags">
+                    <div class="textbox" id="tag">
+                        <p>#Huvudrätt</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Nötkött</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Gluten</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Mjölkprotein</p>
+                    </div>
+                    <div class="textbox" id="green-tag">
+                        <p>#Anpassningsbar</p>
+                    </div>
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Nötkött</p>
-                </div>
-                <div class="textbox" id="tag">
-                    <p>#Gluten</p>
-                </div>
-                <div class="textbox" id="tag">
-                    <p>#Mjölkprotein</p>
-                </div>
-                <div class="textbox" id="green-tag">
-                    <p>#Anpassningsbar</p>
-                </div>
-            </div>
+            </a>
         </div>
     </div>
 
@@ -405,165 +405,176 @@
 
     <div class="recipes-container hidden" id="search-results-recipes">
         <div class="card" id="card1">
-            <img src="assets/lasagne2.png" alt="Nonnas söndags Lasagne med tomat och rödlöksallad upplagd i en plåt">
-            <h1>Nonnas söndags Lasagne med tomat och rödlöksallad</h1>
-            <div class="textbox" id="tags">
-                <div class="textbox" id="tag">
-                    <p>#Pasta</p>
+            <a href="recipe.html" class="card-link">
+                <img src="assets/lasagne2.png"
+                    alt="Nonnas söndags Lasagne med tomat och rödlöksallad upplagd i en plåt">
+                <h1>Nonnas söndags Lasagne med tomat och rödlöksallad</h1>
+                <div class="textbox" id="tags">
+                    <div class="textbox" id="tag">
+                        <p>#Pasta</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Italiensk</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Glutenfri</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Kalvfärs</p>
+                    </div>
+                    <div class="textbox" id="green-tag">
+                        <p>#Anpassningsbar</p>
+                    </div>
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Italiensk</p>
+                <div class="textbox" id="dollars">
+                    <img src="assets/heavy_dollar_sign.png" class="first-dollar">
+                    <img src="assets/heavy_dollar_sign2.png" class="dollar">
+                    <img src="assets/heavy_dollar_sign2.png" class="dollar">
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Glutenfri</p>
-                </div>
-                <div class="textbox" id="tag">
-                    <p>#Kalvfärs</p>
-                </div>
-                <div class="textbox" id="green-tag">
-                    <p>#Anpassningsbar</p>
-                </div>
-            </div>
-            <div class="textbox" id="dollars">
-                <img src="assets/heavy_dollar_sign.png" class="first-dollar">
-                <img src="assets/heavy_dollar_sign2.png" class="dollar">
-                <img src="assets/heavy_dollar_sign2.png" class="dollar">
-            </div>
-            <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Snabb</p>
-            <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
-            <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+                <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Snabb</p>
+                <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
+                <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+            </a>
         </div>
         <div class="card" id="card2">
-            <img src="assets/lasagne3.png" alt="Lasagne bolognese med salvia upplagd på tallrik">
-            <h1>Lasagne bolognese med salvia</h1>
-            <div class="textbox" id="tags">
-                <div class="textbox" id="tag">
-                    <p>#Huvudrätt</p>
+            <a href="recipe.html" class="card-link">
+                <img src="assets/lasagne3.png" alt="Lasagne bolognese med salvia upplagd på tallrik">
+                <h1>Lasagne bolognese med salvia</h1>
+                <div class="textbox" id="tags">
+                    <div class="textbox" id="tag">
+                        <p>#Huvudrätt</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Italiensk</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Vegetarisk</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Mjölkprotein</p>
+                    </div>
+                    <div class="textbox" id="green-tag">
+                        <p>#Anpassningsbar</p>
+                    </div>
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Italiensk</p>
+                <div class="textbox" id="dollars">
+                    <img src="assets/heavy_dollar_sign.png" class="first-dollar">
+                    <img src="assets/heavy_dollar_sign2.png" class="dollar">
+                    <img src="assets/heavy_dollar_sign2.png" class="dollar">
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Vegetarisk</p>
-                </div>
-                <div class="textbox" id="tag">
-                    <p>#Mjölkprotein</p>
-                </div>
-                <div class="textbox" id="green-tag">
-                    <p>#Anpassningsbar</p>
-                </div>
-            </div>
-            <div class="textbox" id="dollars">
-                <img src="assets/heavy_dollar_sign.png" class="first-dollar">
-                <img src="assets/heavy_dollar_sign2.png" class="dollar">
-                <img src="assets/heavy_dollar_sign2.png" class="dollar">
-            </div>
-            <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Snabb</p>
-            <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
-            <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+                <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Snabb</p>
+                <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
+                <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+            </a>
         </div>
         <div class="card" id="card3">
-            <img src="assets/lasagne4.png" alt="Vit Lasagna med anka">
-            <h1>Vit Lasagna med anka</h1>
-            <div class="textbox" id="tags">
-                <div class="textbox" id="tag">
-                    <p>#Förrätt</p>
+            <a href="recipe.html" class="card-link">
+                <img src="assets/lasagne4.png" alt="Vit Lasagna med anka">
+                <h1>Vit Lasagna med anka</h1>
+                <div class="textbox" id="tags">
+                    <div class="textbox" id="tag">
+                        <p>#Förrätt</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Seasam</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Vegetarisk</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Gluten</p>
+                    </div>
+                    <div class="textbox" id="red-tag">
+                        <p>#Ej anpassningsbar</p>
+                    </div>
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Seasam</p>
+                <div class="textbox" id="dollars">
+                    <img src="assets/heavy_dollar_sign.png" class="first-dollar">
+                    <img src="assets/heavy_dollar_sign2.png" class="dollar">
+                    <img src="assets/heavy_dollar_sign2.png" class="dollar">
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Vegetarisk</p>
-                </div>
-                <div class="textbox" id="tag">
-                    <p>#Gluten</p>
-                </div>
-                <div class="textbox" id="red-tag">
-                    <p>#Ej anpassningsbar</p>
-                </div>
-            </div>
-            <div class="textbox" id="dollars">
-                <img src="assets/heavy_dollar_sign.png" class="first-dollar">
-                <img src="assets/heavy_dollar_sign2.png" class="dollar">
-                <img src="assets/heavy_dollar_sign2.png" class="dollar">
-            </div>
-            <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Snabb</p>
-            <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
-            <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+                <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Snabb</p>
+                <p id="icon-text"><img src="assets/frog.png" class="icon">Enkel</p>
+                <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+            </a>
         </div>
         <div class="card" id="card4">
-            <img src="assets/lasagne5.png" alt="Lasagna al forno">
-            <h1>Lasagna al forno</h1>
-            <div class="textbox" id="tags">
-                <div class="textbox" id="tag">
-                    <p>#Italiensk</p>
+            <a href="recipe.html" class="card-link">
+                <img src="assets/lasagne5.png" alt="Lasagna al forno">
+                <h1>Lasagna al forno</h1>
+                <div class="textbox" id="tags">
+                    <div class="textbox" id="tag">
+                        <p>#Italiensk</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Nötkött</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Pasta</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Mjölkprotein</p>
+                    </div>
+                    <div class="textbox" id="red-tag">
+                        <p>#Ej anpassningsbar</p>
+                    </div>
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Nötkött</p>
+                <div class="textbox" id="dollars">
+                    <img src="assets/heavy_dollar_sign.png" class="first-dollar">
+                    <img src="assets/heavy_dollar_sign2.png" class="dollar">
+                    <img src="assets/heavy_dollar_sign2.png" class="dollar">
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Pasta</p>
-                </div>
-                <div class="textbox" id="tag">
-                    <p>#Mjölkprotein</p>
-                </div>
-                <div class="textbox" id="red-tag">
-                    <p>#Ej anpassningsbar</p>
-                </div>
-            </div>
-            <div class="textbox" id="dollars">
-                <img src="assets/heavy_dollar_sign.png" class="first-dollar">
-                <img src="assets/heavy_dollar_sign2.png" class="dollar">
-                <img src="assets/heavy_dollar_sign2.png" class="dollar">
-            </div>
-            <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Medel</p>
-            <p id="icon-text"><img src="assets/frog.png" class="icon">Medel</p>
-            <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+                <p id="icon-text"><img src="assets/alarm_clock.png" class="icon">Medel</p>
+                <p id="icon-text"><img src="assets/frog.png" class="icon">Medel</p>
+                <p id="icon-text"><img src="assets/car.png" class="icon">Lätt att transportera</p>
+            </a>
         </div>
         <div class="card" id="card5">
-            <img src="assets/lasagne6.png" alt="Krämig Kycklinglasagne">
-            <h1>Krämig Kycklinglasagne</h1>
-            <div class="textbox" id="tags">
-                <div class="textbox" id="tag">
-                    <p>#Pasta</p>
+            <a href="recipe.html" class="card-link">
+                <img src="assets/lasagne6.png" alt="Krämig Kycklinglasagne">
+                <h1>Krämig Kycklinglasagne</h1>
+                <div class="textbox" id="tags">
+                    <div class="textbox" id="tag">
+                        <p>#Pasta</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Mjölkprotein</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Gluten</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Gluten</p>
+                    </div>
+                    <div class="textbox" id="green-tag">
+                        <p>#Anpassningsbar</p>
+                    </div>
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Mjölkprotein</p>
-                </div>
-                <div class="textbox" id="tag">
-                    <p>#Gluten</p>
-                </div>
-                <div class="textbox" id="tag">
-                    <p>#Gluten</p>
-                </div>
-                <div class="textbox" id="green-tag">
-                    <p>#Anpassningsbar</p>
-                </div>
-            </div>
+            </a>
         </div>
         <div class="card" id="card6">
-            <img src="assets/lasagne7.png" alt="Vegetarisk lasagne med vegofärs">
-            <h1>Vegetarisk lasagne med vegofärs</h1>
-            <div class="textbox" id="tags">
-                <div class="textbox" id="tag">
-                    <p>#Huvudrätt</p>
+            <a href="recipe.html" class="card-link">
+                <img src="assets/lasagne7.png" alt="Vegetarisk lasagne med vegofärs">
+                <h1>Vegetarisk lasagne med vegofärs</h1>
+                <div class="textbox" id="tags">
+                    <div class="textbox" id="tag">
+                        <p>#Huvudrätt</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Nötkött</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Gluten</p>
+                    </div>
+                    <div class="textbox" id="tag">
+                        <p>#Mjölkprotein</p>
+                    </div>
+                    <div class="textbox" id="green-tag">
+                        <p>#Anpassningsbar</p>
+                    </div>
                 </div>
-                <div class="textbox" id="tag">
-                    <p>#Nötkött</p>
-                </div>
-                <div class="textbox" id="tag">
-                    <p>#Gluten</p>
-                </div>
-                <div class="textbox" id="tag">
-                    <p>#Mjölkprotein</p>
-                </div>
-                <div class="textbox" id="green-tag">
-                    <p>#Anpassningsbar</p>
-                </div>
-            </div>
+            </a>
         </div>
-
-
 </body>
 
 </html>
